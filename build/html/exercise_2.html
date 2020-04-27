@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-BR" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exercício II &mdash; documentação UiPath </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> UiPath
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="interface_guide.html">Guia para a Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">Exercícios</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UiPath</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Exercício II</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/exercise_2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exercicio-ii">
+<h1>Exercício II<a class="headerlink" href="#exercicio-ii" title="Link permanente para este título">¶</a></h1>
+<div class="section" id="id1">
+<h2><strong>Exercício II</strong><a class="headerlink" href="#id1" title="Link permanente para este título">¶</a></h2>
+<div class="section" id="capturar-dados-de-uma-pagina-web-e-salva-los-em-uma-planilha-do-excel">
+<h3>Capturar dados de uma página web e salvá-los em uma planilha do Excel<a class="headerlink" href="#capturar-dados-de-uma-pagina-web-e-salva-los-em-uma-planilha-do-excel" title="Link permanente para este título">¶</a></h3>
+<p>Neste exercício, iremos realizar scraping de uma página web – fakenamegenerator.com – 50 vezes e salva os dados em uma planilha do Excel.</p>
+</div>
+<div class="section" id="i-crie-uma-nova-sequencia">
+<h3><strong>I – Crie uma nova sequência</strong><a class="headerlink" href="#i-crie-uma-nova-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma nova sequência clicando em <strong>New -&gt; Sequence</strong>.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_new_sequence.png" src="_images/ex1_new_sequence.png" />
+</div>
+</div>
+<div class="section" id="ii-escolha-o-nome-da-nova-sequencia">
+<h3><strong>II - Escolha o nome da nova sequência</strong><a class="headerlink" href="#ii-escolha-o-nome-da-nova-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Escolha o nome da nova sequência no diálogo que aparecerá.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_name_sequence.png" src="_images/ex1_name_sequence.png" />
+</div>
+</div>
+<div class="section" id="iii-sequencia-vazia">
+<h3><strong>III – Sequência vazia</strong><a class="headerlink" href="#iii-sequencia-vazia" title="Link permanente para este título">¶</a></h3>
+<p>Aparecerá uma caixa contendo a sequência vazia.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_drop_sequence.png" src="_images/ex1_drop_sequence.png" />
+</div>
+</div>
+<div class="section" id="iv-insira-open-browser-na-sequencia">
+<h3><strong>IV – Insira Open Browser na sequência</strong><a class="headerlink" href="#iv-insira-open-browser-na-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Arraste Open Browser para a sequência, contido em <strong>UI Automation -&gt; Open Browser</strong>.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_open_browser.png" src="_images/ex2_add_open_browser.png" />
+</div>
+</div>
+<div class="section" id="v-selecionar-navegador">
+<h3><strong>V – Selecionar navegador</strong><a class="headerlink" href="#v-selecionar-navegador" title="Link permanente para este título">¶</a></h3>
+<p>Clique na aba Properties e selecione o navegador a ser utilizado.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_choose_browser.png" src="_images/ex2_choose_browser.png" />
+</div>
+</div>
+<div class="section" id="vi-inserir-url">
+<h3><strong>VI – Inserir URL</strong><a class="headerlink" href="#vi-inserir-url" title="Link permanente para este título">¶</a></h3>
+<p>Insira a URL desejada (“<a class="reference external" href="http://www.fakenamegenerator.com">http://www.fakenamegenerator.com</a>”, no nosso caso).</p>
+<div class="figure align-default">
+<img alt="_images/ex2_insert_url.png" src="_images/ex2_insert_url.png" />
+</div>
+</div>
+<div class="section" id="vii-inserir-input-dialog-na-sequencia">
+<h3><strong>VII – Inserir Input Dialog na sequência</strong><a class="headerlink" href="#vii-inserir-input-dialog-na-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Arraste um Input Dialog para a sequência, contido em System -&gt; Dialog -&gt; Input Dialog e preencha-o com o título “Enter details” e label “Entre com o número de consumidores”.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_insert_dialog.png" src="_images/ex2_insert_dialog.png" />
+</div>
+</div>
+<div class="section" id="viii-criar-variavel-que-alocara-numero-de-ciclos">
+<h3><strong>VIII – Criar variável que alocará número de ciclos</strong><a class="headerlink" href="#viii-criar-variavel-que-alocara-numero-de-ciclos" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma variável “numero” para especificar a quantidade de vezes que iremos procurar por dados na página - no nosso caso “number”.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_cycles_variable.png" src="_images/ex2_add_cycles_variable.png" />
+</div>
+</div>
+<div class="section" id="ix-configure-a-saida-do-input-dialog">
+<h3><strong>IX – Configure a saída do Input Dialog</strong><a class="headerlink" href="#ix-configure-a-saida-do-input-dialog" title="Link permanente para este título">¶</a></h3>
+<p>Abra a aba propriedades e coloque a variável “numero” como saída do Input Dialog.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_configure_input_dialog.png" src="_images/ex2_configure_input_dialog.png" />
+</div>
+</div>
+<div class="section" id="x-criar-loop-do-while">
+<h3><strong>X – Criar Loop Do While</strong><a class="headerlink" href="#x-criar-loop-do-while" title="Link permanente para este título">¶</a></h3>
+<p>Arraste a atividade Do While para a sequência dentro da atividade Do, do Open Browser. Está contida em <strong>Workflow -&gt; Control -&gt; Do While</strong>.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_do_while_loop.png" src="_images/ex2_add_do_while_loop.png" />
+</div>
+</div>
+<div class="section" id="xi-adicionar-condicao-de-parada">
+<h3><strong>XI – Adicionar Condição de Parada</strong><a class="headerlink" href="#xi-adicionar-condicao-de-parada" title="Link permanente para este título">¶</a></h3>
+<p>Coloque a expressão “val &lt; Cint(number)” como condição de parada (Condition) do ciclo.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="_images/ex2_add_stop_condition.png" src="_images/ex2_add_stop_condition.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="xii-inserir-atividade-assign">
+<h3><strong>XII – Inserir atividade Assign</strong><a class="headerlink" href="#xii-inserir-atividade-assign" title="Link permanente para este título">¶</a></h3>
+<p>Arraste a atividade Assign, contida em <strong>System -&gt; Activities -&gt; Statements</strong>, para a sequência dentro do Body e assinale seu valor como <strong>val = val + 1</strong>.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="_images/ex2_add_assign.png" src="_images/ex2_add_assign.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="xiii-inserir-getfulltext">
+<h3><strong>XIII – Inserir GetFullText</strong><a class="headerlink" href="#xiii-inserir-getfulltext" title="Link permanente para este título">¶</a></h3>
+<p>Arraste a atividade Get Full Text, contida em <strong>UI Automation -&gt; Text -&gt; Screen Scraping</strong> para a sequência.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_get_full_text.png" src="_images/ex2_add_get_full_text.png" />
+</div>
+</div>
+<div class="section" id="xiv-inserir-nome">
+<h3><strong>XIV – Inserir Nome</strong><a class="headerlink" href="#xiv-inserir-nome" title="Link permanente para este título">¶</a></h3>
+<p>Clique em ‘Indicate element inside browser’ e selecione o nome dentro da página do site Fake Name Generator</p>
+<div class="figure align-default">
+<img alt="_images/ex2_insert_name.png" src="_images/ex2_insert_name.png" />
+</div>
+</div>
+<div class="section" id="xv-criar-variavel-nome">
+<h3><strong>XV – Criar Variável Nome</strong><a class="headerlink" href="#xv-criar-variavel-nome" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma variável “nome” e especifique-a como saída da atividade Get Full Text.</p>
+<div class="figure align-default">
+<img alt="./images/ex2_add_variable_name.png" src="./images/ex2_add_variable_name.png" />
+</div>
+</div>
+<div class="section" id="xvi-repertir-passos-xiv-e-xv">
+<h3><strong>XVI – Repertir Passos XIV e XV</strong><a class="headerlink" href="#xvi-repertir-passos-xiv-e-xv" title="Link permanente para este título">¶</a></h3>
+<p>Repita os passos XIV e XV mas para as variáveis “telefone” e “datanascimento”.</p>
+</div>
+<div class="section" id="xvii-criar-datatable">
+<h3><strong>XVII – Criar DataTable</strong><a class="headerlink" href="#xvii-criar-datatable" title="Link permanente para este título">¶</a></h3>
+<p>Agora criaremos uma tabela de dados, para isso arraste a atividade Build Data Table, contida em <strong>Programming -&gt; DataTable</strong>, à sequência, logo abaixo de Input Dialog.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_data_table.png" src="_images/ex2_add_data_table.png" />
+</div>
+</div>
+<div class="section" id="xviii-preencher-campos-datatable">
+<h3><strong>XVIII – Preencher campos DataTable</strong><a class="headerlink" href="#xviii-preencher-campos-datatable" title="Link permanente para este título">¶</a></h3>
+<p>Adicione os campos na tabela, clicando em DataTable… e preenchendo os campos</p>
+<div class="figure align-default">
+<img alt="_images/ex2_insert_data_table_fields.png" src="_images/ex2_insert_data_table_fields.png" />
+</div>
+</div>
+<div class="section" id="xix-criar-variavel-que-ira-conter-datatable">
+<h3><strong>XIX – Criar variável que irá conter DataTable</strong><a class="headerlink" href="#xix-criar-variavel-que-ira-conter-datatable" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma variável para guardar os resultados com o nome de “ExtracaoDataTable”.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_data_table_variable.png" src="_images/ex2_add_data_table_variable.png" />
+</div>
+</div>
+<div class="section" id="xx-alterar-tipo-da-variavel">
+<h3><strong>XX – Alterar tipo da variável</strong><a class="headerlink" href="#xx-alterar-tipo-da-variavel" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma variável para guardar os resultados com o nome de “ExtracaoDataTable”.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_change_var_type.png" src="_images/ex2_change_var_type.png" />
+</div>
+<div class="figure align-default">
+<img alt="_images/ex2_change_var_type_2.png" src="_images/ex2_change_var_type_2.png" />
+</div>
+</div>
+<div class="section" id="xxi-adicionar-atividade-adddatarow">
+<h3><strong>XXI – Adicionar atividade AddDataRow</strong><a class="headerlink" href="#xxi-adicionar-atividade-adddatarow" title="Link permanente para este título">¶</a></h3>
+<p>Arraste a atividade Add Data Row, contida em <strong>Programming -&gt; DataTable</strong>, à sequência, logo abaixo de Get Full Text.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_add_data_row.png" src="_images/ex2_add_data_row.png" />
+</div>
+</div>
+<div class="section" id="xxii-assinalar-adddatarow">
+<h3><strong>XXII – Assinalar AddDataRow</strong><a class="headerlink" href="#xxii-assinalar-adddatarow" title="Link permanente para este título">¶</a></h3>
+<p>Assinale à ArrayRow da atividade Add Data Row o dicionário contendo o nome, telefone e datanascimento ({nome,telefone,datanascimento}) e DataTable o nome da DataTable que definimos no passo XVIII.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_assign_data_row.png" src="_images/ex2_assign_data_row.png" />
+</div>
+</div>
+<div class="section" id="xxiii-configurar-pagina-para-atualizar">
+<h3><strong>XXIII - Configurar Página para Atualizar</strong><a class="headerlink" href="#xxiii-configurar-pagina-para-atualizar" title="Link permanente para este título">¶</a></h3>
+<p>Precisamos atualizar a página toda vez que quisermos um registro novo, faremos isso clicando no botão Generate, que gera outro registro. Para fazer isso, arraste a atividade Click, contida em <strong>UI Automation -&gt; Element -&gt; Mouse</strong> e defina o elemento da página desejado clicando em “Indicate element inside browser”. O elemento é o botão Generate na página.</p>
+<div class="figure align-default">
+<img alt="_images/ex2_click_generator.png" src="_images/ex2_click_generator.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Paulo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

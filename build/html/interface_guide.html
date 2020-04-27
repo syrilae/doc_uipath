@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-BR" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Guia para a Interface &mdash; documentação UiPath </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="next" title="Exercícios" href="exercises.html" />
+    <link rel="prev" title="UiPath - Documentação Inicial" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> UiPath
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guia para a Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#i-o-que-e-rpa"><strong>I. O que é RPA?</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ii-comecando-no-uipath"><strong>II. Começando no UiPath</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conceitos-chave">Conceitos-chave</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-de-projetos"><strong>2.1 - Tipos de Projetos</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#componentes-do-uipath"><strong>2.2 – Componentes do UIPath</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ribbon-barra-de-navegacao"><strong>2.2.1 - Ribbon / Barra de Navegação</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recording-gravacao">Recording – Gravação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scraping-aquisicao-de-dados">Scraping - Aquisição de Dados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-events-eventos-de-usuario">User Events - Eventos de Usuário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-unused-variables-remover-variaveis-nao-utilizadas">Remove Unused Variables - Remover Variáveis Não-utilizadas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-novo">New – Novo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequencia">Sequência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fluxograma">Fluxograma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#state-machine-maquina-de-evento">State Machine - Máquina de Evento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#painel-de-atividades"><strong>2.2.2 – Painel de Atividades</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#computer-vision-visao-computacional"><strong>Computer Vision - Visão Computacional</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#orchestrator-orquestrador"><strong>Orchestrator - Orquestrador</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-programacao"><strong>Programming - Programação</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-sistema"><strong>System - Sistema</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#testing-testes"><strong>Testing - Testes</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ui-automation-automacao-de-interface-de-usuario"><strong>UI Automation - Automação de Interface de Usuário</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#painel-de-propriedades"><strong>2.3 - Painel de Propriedades</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">Exercícios</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UiPath</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Guia para a Interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/interface_guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="guia-para-a-interface">
+<h1>Guia para a Interface<a class="headerlink" href="#guia-para-a-interface" title="Link permanente para este título">¶</a></h1>
+<div class="section" id="i-o-que-e-rpa">
+<h2><strong>I. O que é RPA?</strong><a class="headerlink" href="#i-o-que-e-rpa" title="Link permanente para este título">¶</a></h2>
+<blockquote>
+<div><p>RPA vem de Robotic Process Automation, que traduzido para o português torna-se “Automação Robótica de Processos”.</p>
+</div></blockquote>
+<p><strong>Automação</strong></p>
+<blockquote>
+<div><p>Automação ocorre quando uma tarefa acontece automaticamente, ie. <strong>sem intervenção humana</strong>.</p>
+</div></blockquote>
+<p><strong>Robótica</strong></p>
+<blockquote>
+<div><p>Um robô é uma entidade capaz de ser programada por um computador para realizar tarefas complexas. Em termos de ARP, esta tarefa seria <strong>imitar ações humanas</strong>.</p>
+</div></blockquote>
+<dl class="simple">
+<dt><strong>de Processos</strong></dt><dd><p>Um processo é uma <strong>sequência de passos</strong>, que levam a uma atividade ou tarefa significativa.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="ii-comecando-no-uipath">
+<h2><strong>II. Começando no UiPath</strong><a class="headerlink" href="#ii-comecando-no-uipath" title="Link permanente para este título">¶</a></h2>
+<div class="section" id="conceitos-chave">
+<h3>Conceitos-chave<a class="headerlink" href="#conceitos-chave" title="Link permanente para este título">¶</a></h3>
+<dl class="simple">
+<dt><strong>Atividades</strong></dt><dd><p>Uma atividade é a menor ação possível no UIPath. Por exemplo, clicar com o botão esquerdo do mouse.</p>
+</dd>
+<dt><strong>Sequências</strong></dt><dd><p>Uma sequência é uma série de atividades que, em conjunto, realizam uma tarefa significativa. Por exemplo, entrar no seu e-mail.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="tipos-de-projetos">
+<h3><strong>2.1 - Tipos de Projetos</strong><a class="headerlink" href="#tipos-de-projetos" title="Link permanente para este título">¶</a></h3>
+<dl class="simple">
+<dt><strong>Blank - Em branco</strong></dt><dd><p>Um projeto em branco é uma “tábula rasa” em que você pode construir seus projetos do zero.</p>
+</dd>
+<dt><strong>Simple Process - Processo Simples</strong></dt><dd><p>Um processo simples basicamente nos dá um modelo de um fluxograma ie. um diagrama de uma sequência de atividades.</p>
+</dd>
+<dt><strong>Agent Process Improvement - Melhoria de Processos de Agente</strong></dt><dd><p>Auxilia o usuário a automatizar as tarefas.</p>
+</dd>
+</dl>
+<p>eg. configurar atalhos para cada tarefa</p>
+<dl class="simple">
+<dt><strong>Transactional Business Process - Processo de Negócios Transacional</strong></dt><dd><p>É utilizado para definir estados em um projeto, que são úteis em processos de negócio.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="componentes-do-uipath">
+<h3><strong>2.2 – Componentes do UIPath</strong><a class="headerlink" href="#componentes-do-uipath" title="Link permanente para este título">¶</a></h3>
+</div>
+<div class="section" id="ribbon-barra-de-navegacao">
+<h3><strong>2.2.1 - Ribbon / Barra de Navegação</strong><a class="headerlink" href="#ribbon-barra-de-navegacao" title="Link permanente para este título">¶</a></h3>
+</div>
+<div class="section" id="recording-gravacao">
+<h3>Recording – Gravação<a class="headerlink" href="#recording-gravacao" title="Link permanente para este título">¶</a></h3>
+<blockquote>
+<div><p>O gravador do UIPath permite aos usuários gravar movimentos do mouse e atividades do teclado dentro da interface deu suário para gerar scripts de automação.</p>
+</div></blockquote>
+<img alt="_images/ribbon_recording.png" src="_images/ribbon_recording.png" />
+<p>Como utilizar:</p>
+<ul class="simple">
+<li><p>Clique no botão</p></li>
+<li><p>Realize a atividade que você quer automatizar</p></li>
+<li><p>Pressione o botão ‘ESC’</p></li>
+</ul>
+</div>
+<div class="section" id="scraping-aquisicao-de-dados">
+<h3>Scraping - Aquisição de Dados<a class="headerlink" href="#scraping-aquisicao-de-dados" title="Link permanente para este título">¶</a></h3>
+<blockquote>
+<div><p>É utilizado para extrair informações da tela ou de dados provenientes de uma fonte externa.</p>
+</div></blockquote>
+<img alt="_images/ribbon_scraping.png" src="_images/ribbon_scraping.png" />
+</div>
+<div class="section" id="user-events-eventos-de-usuario">
+<h3>User Events - Eventos de Usuário<a class="headerlink" href="#user-events-eventos-de-usuario" title="Link permanente para este título">¶</a></h3>
+<blockquote>
+<div><p>Captura entradas que o usuário dá à interface e executa a ação. As entradas podem ser clicks do mouse, teclas pressionadas, rolagens de tela, etc.</p>
+</div></blockquote>
+<img alt="_images/ribbon_events.png" src="_images/ribbon_events.png" />
+</div>
+<div class="section" id="remove-unused-variables-remover-variaveis-nao-utilizadas">
+<h3>Remove Unused Variables - Remover Variáveis Não-utilizadas<a class="headerlink" href="#remove-unused-variables-remover-variaveis-nao-utilizadas" title="Link permanente para este título">¶</a></h3>
+<blockquote>
+<div><p>É utilizado para remover variáveis inutilizadas. Elas podem ser utilizadas caso exista um valor que mude durante o fluxo do programa ou para passar seu valor para outro componente.</p>
+</div></blockquote>
+<img alt="_images/ribbon_remove_variables.png" src="_images/ribbon_remove_variables.png" />
+</div>
+<div class="section" id="new-novo">
+<h3>New – Novo<a class="headerlink" href="#new-novo" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id1">
+<img alt="_images/ribbon_new.png" src="_images/ribbon_new.png" />
+<p class="caption"><span class="caption-text">Utilizado para criar arquivos dentro do projeto.</span><a class="headerlink" href="#id1" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="sequencia">
+<h3>Sequência<a class="headerlink" href="#sequencia" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id2">
+<img alt="_images/ribbon_new_sequence.png" src="_images/ribbon_new_sequence.png" />
+<p class="caption"><span class="caption-text">Cria uma nova sequência em branco.</span><a class="headerlink" href="#id2" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="fluxograma">
+<h3>Fluxograma<a class="headerlink" href="#fluxograma" title="Link permanente para este título">¶</a></h3>
+<div class="align-center figure">
+<img alt="_images/ribbon_new_flowchart.png" src="_images/ribbon_new_flowchart.png" />
+</div>
+<p>Cria um novo modelo de fluxograma.</p>
+</div>
+<div class="section" id="state-machine-maquina-de-evento">
+<h3>State Machine - Máquina de Evento<a class="headerlink" href="#state-machine-maquina-de-evento" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id3">
+<img alt="_images/ribbon_new_state_machine.png" src="_images/ribbon_new_state_machine.png" />
+<p class="caption"><span class="caption-text">Cria um novo modelo de máquina de estado.</span><a class="headerlink" href="#id3" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="painel-de-atividades">
+<h3><strong>2.2.2 – Painel de Atividades</strong><a class="headerlink" href="#painel-de-atividades" title="Link permanente para este título">¶</a></h3>
+<blockquote>
+<div><p>O painel de atividades exibe todas as atividades disponíveis para uso na automação de tarefas.</p>
+</div></blockquote>
+</div>
+<div class="section" id="computer-vision-visao-computacional">
+<h3><strong>Computer Vision - Visão Computacional</strong><a class="headerlink" href="#computer-vision-visao-computacional" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id4">
+<img alt="_images/activity_cv.png" src="_images/activity_cv.png" />
+<p class="caption"><span class="caption-text">Contém atividades relacionadas à algoritmos de visão computacional.</span><a class="headerlink" href="#id4" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="orchestrator-orquestrador">
+<h3><strong>Orchestrator - Orquestrador</strong><a class="headerlink" href="#orchestrator-orquestrador" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id5">
+<img alt="_images/activity_orchestrator.png" src="_images/activity_orchestrator.png" />
+<p class="caption"><span class="caption-text">Gerenciamento de atividades distribuídas entre vários computadores.</span><a class="headerlink" href="#id5" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="programming-programacao">
+<h3><strong>Programming - Programação</strong><a class="headerlink" href="#programming-programacao" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id6">
+<img alt="_images/activity_programming.png" src="_images/activity_programming.png" />
+<p class="caption"><span class="caption-text">Aqui estão atividades destinadas a problemas comuns em programação, como fluxo de controle, tratamento de exceções, etc.</span><a class="headerlink" href="#id6" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="system-sistema">
+<h3><strong>System - Sistema</strong><a class="headerlink" href="#system-sistema" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id7">
+<img alt="_images/activity_cv.png" src="_images/activity_cv.png" />
+<p class="caption"><span class="caption-text">Atividades relacionadas ao sistema, eg. copiar para a área de transferência, deletar arquivo.</span><a class="headerlink" href="#id7" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="testing-testes">
+<h3><strong>Testing - Testes</strong><a class="headerlink" href="#testing-testes" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id8">
+<img alt="_images/activity_testing.png" src="_images/activity_testing.png" />
+<p class="caption"><span class="caption-text">Atividades relacionadas a testes internos da atividade.</span><a class="headerlink" href="#id8" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="ui-automation-automacao-de-interface-de-usuario">
+<h3><strong>UI Automation - Automação de Interface de Usuário</strong><a class="headerlink" href="#ui-automation-automacao-de-interface-de-usuario" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default" id="id9">
+<img alt="_images/activity_uiautomation.png" src="_images/activity_uiautomation.png" />
+<p class="caption"><span class="caption-text">Nesta seção estão contidas atividades concernentes à automação de eventos da interface.</span><a class="headerlink" href="#id9" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Element - Elemento</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Eventos de mouse, eventos de teclado, eventos de texto.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Image - Imagem</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Eventos de imagem.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>OCR – Optical Character Recognition – Reconhecimento Óptico de Caracteres</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Extrair texto de imagens.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>User Events - Eventos de Usuário</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Gatilhos do usuário.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Workflow - Fluxo de Trabalho</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Atividades que estão dentro de fluxogramas. Geralmente envolvem tomada de decisão por parte do sistema.</p>
+</div></blockquote>
+</div>
+<div class="section" id="painel-de-propriedades">
+<h3><strong>2.3 - Painel de Propriedades</strong><a class="headerlink" href="#painel-de-propriedades" title="Link permanente para este título">¶</a></h3>
+<div class="figure align-default">
+<img alt="_images/property_panel.png" src="_images/property_panel.png" />
+</div>
+<p>Mostra as principais propriedades para a atividade atualmente selecionada.</p>
+<dl>
+<dt><strong>Variáveis</strong> - variáveis definidas para a atividade atual.</dt><dd><div class="figure align-default">
+<img alt="_images/property_variables.png" src="_images/property_variables.png" />
+</div>
+</dd>
+<dt><strong>Argumentos</strong> - podem ser passados para outros arquivos enquanto variáveis não podem.</dt><dd><div class="figure align-default">
+<img alt="_images/property_arguments.png" src="_images/property_arguments.png" />
+</div>
+</dd>
+<dt><strong>Importações</strong> - lista todas as atividades que serão importadas por padrão quando você tentar criar seu programa.</dt><dd><div class="figure align-default">
+<img alt="_images/property_imports.png" src="_images/property_imports.png" />
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exercises.html" class="btn btn-neutral float-right" title="Exercícios" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="UiPath - Documentação Inicial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Paulo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

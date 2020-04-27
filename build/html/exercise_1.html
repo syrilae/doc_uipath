@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-BR" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exercício I &mdash; documentação UiPath </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> UiPath
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="interface_guide.html">Guia para a Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">Exercícios</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UiPath</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Exercício I</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/exercise_1.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exercicio-i">
+<h1>Exercício I<a class="headerlink" href="#exercicio-i" title="Link permanente para este título">¶</a></h1>
+<div class="section" id="id1">
+<h2><strong>Exercício I</strong><a class="headerlink" href="#id1" title="Link permanente para este título">¶</a></h2>
+<div class="section" id="criar-uma-tela-que-exibe-o-nome-digitado">
+<h3>Criar uma tela que exibe o nome digitado<a class="headerlink" href="#criar-uma-tela-que-exibe-o-nome-digitado" title="Link permanente para este título">¶</a></h3>
+<p>Neste exemplo criaremos uma sequência que captura o nome do usuário a partir de um Diálogo de Entrada  - <strong>Input Dialog</strong> e exibe uma mensagem <strong>“Olá, [nome da entrada]”</strong> com o nome da entrada dada em uma Caixa de Mensagem - <strong>Message Box</strong>.</p>
+</div>
+<div class="section" id="i-crie-uma-nova-sequencia">
+<h3><strong>I – Crie uma nova sequência</strong><a class="headerlink" href="#i-crie-uma-nova-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma nova sequência clicando em <strong>New -&gt; Sequence</strong>.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_new_sequence.png" src="_images/ex1_new_sequence.png" />
+</div>
+</div>
+<div class="section" id="ii-escolha-o-nome-da-nova-sequencia">
+<h3><strong>II - Escolha o nome da nova sequência</strong><a class="headerlink" href="#ii-escolha-o-nome-da-nova-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Escolha o nome da nova sequência no diálogo que aparecerá.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_name_sequence.png" src="_images/ex1_name_sequence.png" />
+</div>
+</div>
+<div class="section" id="iii-sequencia-vazia">
+<h3><strong>III – Sequência vazia</strong><a class="headerlink" href="#iii-sequencia-vazia" title="Link permanente para este título">¶</a></h3>
+<p>Aparecerá uma caixa contendo a sequência vazia.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_drop_sequence.png" src="_images/ex1_drop_sequence.png" />
+</div>
+</div>
+<div class="section" id="iv-insira-input-dialog-na-sequencia">
+<h3><strong>IV – Insira Input Dialog na sequência</strong><a class="headerlink" href="#iv-insira-input-dialog-na-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Arraste o Input Dialog para a sequência, contido em <strong>System -&gt; Dialog -&gt; Input Dialog</strong>.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_add_input_dialog.png" src="_images/ex1_add_input_dialog.png" />
+</div>
+</div>
+<div class="section" id="v-preencha-o-input-dialog">
+<h3><strong>V – Preencha o Input Dialog</strong><a class="headerlink" href="#v-preencha-o-input-dialog" title="Link permanente para este título">¶</a></h3>
+<p>Preencha o título da janela (“Title”) e o texto a ser exibido acima da caixa de entrada (“Label”)</p>
+<p><strong>OBS</strong>: Todo texto que não seja nome de variável ou expressão deve estar contido entre aspas.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_fill_input_dialog.png" src="_images/ex1_fill_input_dialog.png" />
+</div>
+</div>
+<div class="section" id="vi-crie-uma-nova-variavel-para-guardar-o-valor-da-entrada">
+<h3><strong>VI – Crie uma nova variável para guardar o valor da entrada</strong><a class="headerlink" href="#vi-crie-uma-nova-variavel-para-guardar-o-valor-da-entrada" title="Link permanente para este título">¶</a></h3>
+<p>Crie uma nova variável para guardar o valor da entrada do <strong>Input Dialog</strong> - no nosso caso a variável chama-se “name”.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_create_variable.png" src="_images/ex1_create_variable.png" />
+</div>
+</div>
+<div class="section" id="vii-configure-a-saida-do-input-dialog">
+<h3><strong>VII – Configure a saída do Input Dialog</strong><a class="headerlink" href="#vii-configure-a-saida-do-input-dialog" title="Link permanente para este título">¶</a></h3>
+<p>Ainda com o Input Dialog selecionado, clique na aba Properties e defina o valor “Result” com o nome da variável que você selecionou - no nosso caso “name”.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_configure_output.png" src="_images/ex1_configure_output.png" />
+</div>
+</div>
+<div class="section" id="vii-insira-message-box-na-sequencia">
+<h3><strong>VII – Insira Message Box na sequência</strong><a class="headerlink" href="#vii-insira-message-box-na-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Arraste a <strong>Message Box</strong> para a sequência, contida em System -&gt; Dialog -&gt; Message Box.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_add_message_box.png" src="_images/ex1_add_message_box.png" />
+</div>
+</div>
+<div class="section" id="viii-inserir-texto-na-message-box">
+<h3><strong>VIII – Inserir Texto na Message Box</strong><a class="headerlink" href="#viii-inserir-texto-na-message-box" title="Link permanente para este título">¶</a></h3>
+<p>Insira o texto a ser exibido (no nosso caso “Ola, “) concatenado com o nome da variável (+ name).</p>
+<div class="figure align-default">
+<img alt="_images/ex1_fill_message_box.png" src="_images/ex1_fill_message_box.png" />
+</div>
+</div>
+<div class="section" id="ix-execute-a-sequencia">
+<h3><strong>IX – Execute a sequência</strong><a class="headerlink" href="#ix-execute-a-sequencia" title="Link permanente para este título">¶</a></h3>
+<p>Aperte F6 para rodar o programa ou clique no botão Debug File dentro do Ribbon.</p>
+<div class="figure align-default">
+<img alt="_images/ex1_ribbon_debug.png" src="_images/ex1_ribbon_debug.png" />
+</div>
+</div>
+<div class="section" id="x-programa-sendo-executado">
+<h3><strong>X – Programa sendo Executado</strong><a class="headerlink" href="#x-programa-sendo-executado" title="Link permanente para este título">¶</a></h3>
+<p>O programa irá rodar e aparecerá uma caixa de diálogo pedindo para você inserir seu nome.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="_images/ex1_insert_input.png" src="_images/ex1_insert_input.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="xi-dialogo-final">
+<h3><strong>XI – Diálogo Final</strong><a class="headerlink" href="#xi-dialogo-final" title="Link permanente para este título">¶</a></h3>
+<p>Logo em seguida aparecerá uma caixa contendo o diálogo com o nome que você inseriu anteriormente.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="_images/ex1_final_dialog.png" src="_images/ex1_final_dialog.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Paulo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
