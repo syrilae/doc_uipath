@@ -1,0 +1,74 @@
+\babel@toc {brazil}{}
+\contentsline {chapter}{\numberline {1}Documentação UiPath}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Guia para a Interface}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Exercícios}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Sumário}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Guia para a Interface}{1}{subsection.1.3.1}%
+\contentsline {subsubsection}{\sphinxstylestrong {I. O que é RPA?}}{1}{subsubsection*.3}%
+\contentsline {subsubsection}{\sphinxstylestrong {II. Começando no UiPath}}{2}{subsubsection*.4}%
+\contentsline {paragraph}{Conceitos-chave}{2}{paragraph*.5}%
+\contentsline {paragraph}{\sphinxstylestrong {2.1 - Tipos de Projetos}}{2}{paragraph*.6}%
+\contentsline {paragraph}{\sphinxstylestrong {2.2 \textendash {} Componentes do UIPath}}{2}{paragraph*.7}%
+\contentsline {paragraph}{\sphinxstylestrong {2.2.1 - Ribbon / Barra de Navegação}}{2}{paragraph*.8}%
+\contentsline {paragraph}{Recording \textendash {} Gravação}{2}{paragraph*.9}%
+\contentsline {paragraph}{Scraping - Aquisição de Dados}{2}{paragraph*.10}%
+\contentsline {paragraph}{User Events - Eventos de Usuário}{3}{paragraph*.11}%
+\contentsline {paragraph}{Remove Unused Variables - Remover Variáveis Não-utilizadas}{3}{paragraph*.12}%
+\contentsline {paragraph}{New \textendash {} Novo}{3}{paragraph*.13}%
+\contentsline {paragraph}{Sequência}{3}{paragraph*.14}%
+\contentsline {paragraph}{Fluxograma}{3}{paragraph*.15}%
+\contentsline {paragraph}{State Machine - Máquina de Evento}{4}{paragraph*.16}%
+\contentsline {paragraph}{\sphinxstylestrong {2.2.2 \textendash {} Painel de Atividades}}{4}{paragraph*.17}%
+\contentsline {paragraph}{\sphinxstylestrong {Computer Vision - Visão Computacional}}{4}{paragraph*.18}%
+\contentsline {paragraph}{\sphinxstylestrong {Orchestrator - Orquestrador}}{4}{paragraph*.19}%
+\contentsline {paragraph}{\sphinxstylestrong {Programming - Programação}}{4}{paragraph*.20}%
+\contentsline {paragraph}{\sphinxstylestrong {System - Sistema}}{4}{paragraph*.21}%
+\contentsline {paragraph}{\sphinxstylestrong {Testing - Testes}}{4}{paragraph*.22}%
+\contentsline {paragraph}{\sphinxstylestrong {UI Automation - Automação de Interface de Usuário}}{11}{paragraph*.23}%
+\contentsline {paragraph}{\sphinxstylestrong {2.3 - Painel de Propriedades}}{11}{paragraph*.24}%
+\contentsline {subsection}{\numberline {1.3.2}Exercícios}{11}{subsection.1.3.2}%
+\contentsline {subsubsection}{Exercício I}{11}{subsubsection*.25}%
+\contentsline {subsubsection}{Exercício II}{11}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {1.3.3}Exercício I}{11}{subsection.1.3.3}%
+\contentsline {subsubsection}{\sphinxstylestrong {Exercício I}}{11}{subsubsection*.27}%
+\contentsline {paragraph}{Criar uma tela que exibe o nome digitado}{13}{paragraph*.28}%
+\contentsline {paragraph}{\sphinxstylestrong {I \textendash {} Crie uma nova sequência}}{13}{paragraph*.29}%
+\contentsline {paragraph}{\sphinxstylestrong {II - Escolha o nome da nova sequência}}{13}{paragraph*.30}%
+\contentsline {paragraph}{\sphinxstylestrong {III \textendash {} Sequência vazia}}{13}{paragraph*.31}%
+\contentsline {paragraph}{\sphinxstylestrong {IV \textendash {} Insira Input Dialog na sequência}}{13}{paragraph*.32}%
+\contentsline {paragraph}{\sphinxstylestrong {V \textendash {} Preencha o Input Dialog}}{13}{paragraph*.33}%
+\contentsline {paragraph}{\sphinxstylestrong {VI \textendash {} Crie uma nova variável para guardar o valor da entrada}}{15}{paragraph*.34}%
+\contentsline {paragraph}{\sphinxstylestrong {VII \textendash {} Configure a saída do Input Dialog}}{15}{paragraph*.35}%
+\contentsline {paragraph}{\sphinxstylestrong {VII \textendash {} Insira Message Box na sequência}}{15}{paragraph*.36}%
+\contentsline {paragraph}{\sphinxstylestrong {VIII \textendash {} Inserir Texto na Message Box}}{15}{paragraph*.37}%
+\contentsline {paragraph}{\sphinxstylestrong {IX \textendash {} Execute a sequência}}{15}{paragraph*.38}%
+\contentsline {paragraph}{\sphinxstylestrong {X \textendash {} Programa sendo Executado}}{15}{paragraph*.39}%
+\contentsline {paragraph}{\sphinxstylestrong {XI \textendash {} Diálogo Final}}{15}{paragraph*.40}%
+\contentsline {subsection}{\numberline {1.3.4}Exercício II}{15}{subsection.1.3.4}%
+\contentsline {subsubsection}{\sphinxstylestrong {Exercício II}}{15}{subsubsection*.41}%
+\contentsline {paragraph}{Capturar dados de uma página web e salvá-los em uma planilha do Excel}{15}{paragraph*.42}%
+\contentsline {paragraph}{\sphinxstylestrong {I \textendash {} Crie uma nova sequência}}{17}{paragraph*.43}%
+\contentsline {paragraph}{\sphinxstylestrong {II - Escolha o nome da nova sequência}}{17}{paragraph*.44}%
+\contentsline {paragraph}{\sphinxstylestrong {III \textendash {} Sequência vazia}}{17}{paragraph*.45}%
+\contentsline {paragraph}{\sphinxstylestrong {IV \textendash {} Insira Open Browser na sequência}}{17}{paragraph*.46}%
+\contentsline {paragraph}{\sphinxstylestrong {V \textendash {} Selecionar navegador}}{17}{paragraph*.47}%
+\contentsline {paragraph}{\sphinxstylestrong {VI \textendash {} Inserir URL}}{20}{paragraph*.48}%
+\contentsline {paragraph}{\sphinxstylestrong {VII \textendash {} Inserir Input Dialog na sequência}}{20}{paragraph*.49}%
+\contentsline {paragraph}{\sphinxstylestrong {VIII \textendash {} Criar variável que alocará número de ciclos}}{21}{paragraph*.50}%
+\contentsline {paragraph}{\sphinxstylestrong {IX \textendash {} Configure a saída do Input Dialog}}{21}{paragraph*.51}%
+\contentsline {paragraph}{\sphinxstylestrong {X \textendash {} Criar Loop Do While}}{21}{paragraph*.52}%
+\contentsline {paragraph}{\sphinxstylestrong {XI \textendash {} Adicionar Condição de Parada}}{21}{paragraph*.53}%
+\contentsline {paragraph}{\sphinxstylestrong {XII \textendash {} Inserir atividade Assign}}{21}{paragraph*.54}%
+\contentsline {paragraph}{\sphinxstylestrong {XIII \textendash {} Inserir GetFullText}}{21}{paragraph*.55}%
+\contentsline {paragraph}{\sphinxstylestrong {XIV \textendash {} Inserir Nome}}{21}{paragraph*.56}%
+\contentsline {paragraph}{\sphinxstylestrong {XV \textendash {} Criar Variável Nome}}{26}{paragraph*.57}%
+\contentsline {paragraph}{\sphinxstylestrong {XVI \textendash {} Repertir Passos XIV e XV}}{26}{paragraph*.58}%
+\contentsline {paragraph}{\sphinxstylestrong {XVII \textendash {} Criar DataTable}}{26}{paragraph*.59}%
+\contentsline {paragraph}{\sphinxstylestrong {XVIII \textendash {} Preencher campos DataTable}}{26}{paragraph*.60}%
+\contentsline {paragraph}{\sphinxstylestrong {XIX \textendash {} Criar variável que irá conter DataTable}}{28}{paragraph*.61}%
+\contentsline {paragraph}{\sphinxstylestrong {XX \textendash {} Alterar tipo da variável}}{28}{paragraph*.62}%
+\contentsline {paragraph}{\sphinxstylestrong {XXI \textendash {} Adicionar atividade AddDataRow}}{28}{paragraph*.63}%
+\contentsline {paragraph}{\sphinxstylestrong {XXII \textendash {} Assinalar AddDataRow}}{29}{paragraph*.64}%
+\contentsline {paragraph}{\sphinxstylestrong {XXIII - Configurar Página para Atualizar}}{29}{paragraph*.65}%
+\contentsline {subsection}{\numberline {1.3.5}License}{29}{subsection.1.3.5}%
+\contentsline {chapter}{\numberline {2}Índice e Tabelas}{31}{chapter.2}%
